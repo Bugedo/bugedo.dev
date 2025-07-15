@@ -1,11 +1,15 @@
+import Image from 'next/image';
+
 export function Header() {
   return (
     <header className="sticky top-0 z-50 flex items-center px-6 py-4 border-b border-gray-800 bg-black/80 backdrop-blur">
       <a href="#home" className="flex items-center gap-3">
-        <img
+        <Image
           src="/logo.svg"
           alt="Logo"
-          className="w-8 h-8 transition-transform duration-300 hover:scale-110"
+          width={32}
+          height={32}
+          className="hover:scale-110 transition-transform duration-300"
         />
       </a>
 

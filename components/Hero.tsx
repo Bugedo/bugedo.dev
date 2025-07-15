@@ -12,7 +12,7 @@ export default function Hero() {
         <p className="text-4xl font-medium text-gray-300">Hello there!</p>
 
         <div className="flex flex-col gap-2">
-          <h1 className="text-6xl font-bold leading-tight">I'm Nicolás Bugedo.</h1>
+          <h1 className="text-6xl font-bold leading-tight">I&apos;m Nicolás Bugedo .</h1>
           <h2 className="text-5xl font-light text-gray-400">I build web applications.</h2>
         </div>
 
