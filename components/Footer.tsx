@@ -5,6 +5,7 @@ import Image from 'next/image';
 export function Footer() {
   return (
     <footer
+      id="contact"
       className="relative overflow-hidden bg-[#171717] px-6 lg:px-30 py-10 min-h-[780px] md:min-h-fit"
       style={{
         backgroundImage: "url('/stars_pattern_large_delicate_bg.svg')",
@@ -103,17 +104,6 @@ export function Footer() {
               <DataList.Value>Figma, Photoshop</DataList.Value>
             </DataList.Item>
           </DataList.Root>
-        </div>
-
-        {/* Download CV Button */}
-        <div>
-          <a
-            href="/nicolas-bugedo-fullstack-cv.pdf"
-            download
-            className="inline-block px-4 py-2 border border-gray-500 text-gray-300 rounded hover:bg-gray-700 hover:text-gray-100 transition-colors duration-200"
-          >
-            Download CV
-          </a>
         </div>
       </div>
 
