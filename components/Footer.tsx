@@ -108,7 +108,7 @@ export function Footer() {
         {/* Download CV Button */}
         <div>
           <a
-            href="/Nicolas_Bugedo_FullStack_CV"
+            href="/nicolas-bugedo-fullstack-cv.pdf"
             download
             className="inline-block px-4 py-2 border border-gray-500 text-gray-300 rounded hover:bg-gray-700 hover:text-gray-100 transition-colors duration-200"
           >
