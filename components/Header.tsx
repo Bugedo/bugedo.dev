@@ -3,7 +3,10 @@ import Image from 'next/image';
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 flex items-center px-6 py-4 border-b border-gray-800 bg-black/80 backdrop-blur">
+    <header
+      className="sticky top-0 z-50 flex justify-between items-center px-6 py-4 border-b border-gray-800 bg-black/80 backdrop-blur opacity-0 animate-fadeIn"
+      style={{ animationDelay: '20s', animationFillMode: 'forwards' }}
+    >
       <a href="#home" className="flex items-center gap-3">
         <Image
           src="/logo.svg"
@@ -14,7 +17,7 @@ export function Header() {
         />
       </a>
 
-      <nav className="absolute left-1/2 transform -translate-x-1/2 flex gap-6 text-sm text-gray-400">
+      <nav className="flex gap-6 text-sm text-gray-400">
         <a href="#projects" className="hover:text-white">
           Projects
         </a>
