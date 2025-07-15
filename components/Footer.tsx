@@ -1,5 +1,6 @@
 'use client';
-import { DataList, Link } from '@radix-ui/themes';
+import { DataList } from '@radix-ui/themes';
+import Image from 'next/image';
 
 export function Footer() {
   return (
@@ -15,7 +16,13 @@ export function Footer() {
     >
       {/* SVG background (Moon) */}
       <div className="absolute inset-0 flex justify-end items-end">
-        <img src="/moon.svg" alt="To the moon" className="w-full max-w-[790px] md:max-h-[500px]" />
+        <Image
+          src="/moon.svg"
+          alt="To the moon"
+          width={790}
+          height={500}
+          className="w-full max-w-[790px] md:max-h-[500px]"
+        />
       </div>
 
       {/* Content */}
