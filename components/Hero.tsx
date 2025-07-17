@@ -16,12 +16,12 @@ export default function Hero() {
     <section
       id="home"
       className="
-    relative flex flex-col justify-center items-center px-4 text-white overflow-hidden min-h-[100svh]"
+    relative flex flex-col justify-center items-center px-4 text-white min-h-[100svh]"
     >
       <div className="flex flex-col max-w-5xl z-10">
         {/* TITLE 1 */}
         {step >= 0 && (
-          <p className="text-4xl sm:text-5xl font-medium text-gray-300">
+          <p className="mt-6 text-4xl sm:text-5xl font-medium text-gray-300">
             <Typewriter words={['Hello there!']} typeSpeed={100} cursor={false} />
           </p>
         )}
@@ -199,18 +199,10 @@ export default function Hero() {
         </p>
 
         <div
-          className="flex items-center justify-between gap-6 opacity-0 animate-fadeIn"
+          className="flex items-center justify-end opacity-0 animate-fadeIn"
           style={{ animationDelay: '18s', animationFillMode: 'forwards' }}
         >
-          <a
-            href="/nicolas-bugedo-fullstack-cv.pdf"
-            download
-            className="inline-block text-lg sm:text-2xl px-5 py-3 sm:px-5 sm:py-4 border border-gray-500 text-gray-300 rounded hover:bg-gray-700 hover:text-gray-100 transition-colors duration-200"
-          >
-            Download CV
-          </a>
-
-          <div className="flex gap-4 sm:gap-5 text-gray-400">
+          <div className="flex gap-4 sm:gap-5 text-gray-400 self-end">
             <a
               href="https://github.com/CaimanBrujo"
               target="_blank"

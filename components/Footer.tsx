@@ -5,7 +5,7 @@ import Image from 'next/image';
 export function Footer() {
   return (
     <footer
-      className="relative overflow-hidden bg-[#171717] px-6 lg:px-30 pt-20 h-[100svh]"
+      className="relative overflow-hidden bg-[#171717] px-6 lg:px-30 pt-20 h-screen"
       style={{
         backgroundImage: "url('/stars_pattern_large_delicate_bg.svg')",
         backgroundRepeat: 'repeat',

@@ -7,11 +7,11 @@ export default function WorkExperience() {
   return (
     <section
       id="work"
-      className="relative flex flex-col justify-center items-center my-50 px-4 text-white overflow-hidden h-[100svh] snap-start"
+      className="relative flex flex-col justify-center items-center my-20 px-4 text-white h-[100svh]"
     >
       <div className="flex flex-col max-w-5xl z-10">
         {/* TITLE */}
-        <h2 className="text-5xl sm:text-6xl font-bold mb-16 text-white text-center">
+        <h2 className="text-5xl sm:text-6xl font-bold mb-8 text-white text-center">
           Work Experience
         </h2>
 
@@ -20,13 +20,13 @@ export default function WorkExperience() {
           <Tabs.List className="flex justify-center mb-8 gap-4">
             <Tabs.Trigger
               value="fullstack"
-              className="px-5 py-3 rounded-full text-gray-300 hover:text-white hover:bg-gray-700 transition-colors duration-200 data-[state=active]:bg-gray-700 data-[state=active]:text-white text-xl sm:text-2xl"
+              className="px-5 py-3 rounded-full text-gray-300 hover:text-white hover:bg-[#353535] transition-colors duration-200 data-[state=active]:bg-[#353535] data-[state=active]:text-white text-xl sm:text-2xl"
             >
               Full Stack
             </Tabs.Trigger>
             <Tabs.Trigger
               value="previous"
-              className="px-5 py-3 rounded-full text-gray-300 hover:text-white hover:bg-gray-700 transition-colors duration-200 data-[state=active]:bg-gray-700 data-[state=active]:text-white text-xl sm:text-2xl"
+              className="px-5 py-3 rounded-full text-gray-300 hover:text-white hover:bg-[#353535] transition-colors duration-200 data-[state=active]:bg-[#353535] data-[state=active]:text-white text-xl sm:text-2xl"
             >
               Previous
             </Tabs.Trigger>
@@ -38,7 +38,7 @@ export default function WorkExperience() {
             <Tabs.Content value="fullstack">
               <div className="space-y-6">
                 <h3 className="text-4xl sm:text-5xl font-bold text-gray-100">
-                  Co-Founder & Full Stack Developer
+                  Full Stack Developer & Co-Founder
                 </h3>
                 <p className="text-gray-400 text-xl sm:text-2xl mb-4">
                   Developing Bridges · 2025 - Present
@@ -46,8 +46,8 @@ export default function WorkExperience() {
                 <p className="text-lg sm:text-2xl text-gray-300 leading-relaxed mb-4">
                   After relocating to Europe and reflecting deeply on my career path, I decided to
                   return to tech with renewed energy and purpose. Together with a long-time
-                  collaborator and friend—someone I had worked with for years in completely
-                  different industries—we co-founded{' '}
+                  collaborator and friend (someone I had worked with for years in Solar Energy) we
+                  co-founded{' '}
                   <a
                     href="https://developingbridges.com"
                     target="_blank"
@@ -73,22 +73,23 @@ export default function WorkExperience() {
             <Tabs.Content value="previous">
               <div className="space-y-6">
                 <h3 className="text-4xl sm:text-5xl font-bold text-gray-100">
-                  Electrician & Solar Water Heater Installer
+                  Electrician & Solar Energy Technician
                 </h3>
                 <p className="text-gray-400 text-xl sm:text-2xl mb-4">
                   Self-employed · 2017 - 2024
                 </p>
                 <p className="text-lg sm:text-2xl text-gray-300 leading-relaxed mb-4">
-                  For several years, I worked independently and alongside small teams, serving a
-                  wide range of residential and commercial clients. This period shaped my ability to
-                  adapt, solve complex problems on the fly, and communicate clearly with
-                  clients—skills that would later prove invaluable in the software world.
+                  For several years, I worked independently and with small teams, delivering
+                  reliable electrical solutions for residential and commercial clients. I
+                  specialized in designing and implementing energy-efficient systems, including
+                  heating systems and solar panels, combining technical know-how with hands-on
+                  problem solving.
                 </p>
                 <p className="text-lg sm:text-2xl text-gray-300 leading-relaxed">
-                  During this time, I also met my future co-founder, and together we tackled
-                  countless projects in the physical world before realizing our passion for building
-                  in the digital space. That shared history of collaboration is what inspired us to
-                  pivot and co-create Developing Bridges.
+                  This experience taught me to approach challenges with precision and creativity, to
+                  adapt quickly, and to communicate effectively with clients. These skills became
+                  the foundation for my transition into the software world, where I continue to
+                  build innovative solutions.
                 </p>
               </div>
             </Tabs.Content>
