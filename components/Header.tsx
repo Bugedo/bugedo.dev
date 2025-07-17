@@ -1,11 +1,37 @@
 'use client';
 import Image from 'next/image';
+import { useEffect, useState } from 'react';
 
 export function Header() {
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    // Show header after 20s
+    const timer = setTimeout(() => {
+      setVisible(true);
+    }, 20000);
+
+    // Show header on scroll
+    const handleScroll = () => {
+      if (!visible && window.scrollY > 50) {
+        setVisible(true);
+        clearTimeout(timer); // cancel timer if scrolled
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [visible]);
+
   return (
     <header
-      className="sticky top-0 z-50 flex justify-between items-center px-6 py-4 border-b border-gray-800 bg-black/80 backdrop-blur opacity-0 animate-fadeIn"
-      style={{ animationDelay: '20s', animationFillMode: 'forwards' }}
+      className={`sticky top-0 z-50 flex justify-between items-center px-6 py-4 bg-black/80 backdrop-blur transition-opacity duration-500 ${
+        visible ? 'opacity-100' : 'opacity-0'
+      }`}
     >
       <a href="#home" className="flex items-center gap-3">
         <Image

@@ -7,10 +7,7 @@ export default function WorkExperience() {
   return (
     <section
       id="work"
-      className="
-        relative flex flex-col justify-center items-center
-        px-4 text-white overflow-hidden min-h-dvh
-      "
+      className="relative flex flex-col justify-center items-center my-50 px-4 text-white overflow-hidden h-[100svh] snap-start"
     >
       <div className="flex flex-col max-w-5xl z-10">
         {/* TITLE */}

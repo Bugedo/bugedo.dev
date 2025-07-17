@@ -5,8 +5,7 @@ import Image from 'next/image';
 export function Footer() {
   return (
     <footer
-      id="contact"
-      className="relative overflow-hidden bg-[#171717] px-6 lg:px-30 py-10 min-h-[780px] md:min-h-fit"
+      className="relative overflow-hidden bg-[#171717] px-6 lg:px-30 pt-20 h-[100svh]"
       style={{
         backgroundImage: "url('/stars_pattern_large_delicate_bg.svg')",
         backgroundRepeat: 'repeat',
@@ -29,7 +28,7 @@ export function Footer() {
       {/* Content */}
       <div className="relative flex flex-col gap-10">
         {/* Contact Section */}
-        <div className="text-left">
+        <div id="contact" className="text-left">
           <h4 className="text-gray-100 font-semibold mb-4">Contact</h4>
           <ul className="space-y-2 text-sm text-gray-300">
             <li>
