@@ -15,7 +15,8 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative flex flex-col sm:justify-center pt-10 sm:pt-0 items-center h-screen px-4 text-white overflow-hidden"
+      className="
+    relative flex flex-col justify-center items-center px-4 text-white overflow-hidden min-h-dvh"
     >
       <div className="flex flex-col max-w-5xl z-10">
         {/* TITLE 1 */}
