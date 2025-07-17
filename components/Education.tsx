@@ -1,24 +1,18 @@
 'use client';
 
-import { Inset } from '@radix-ui/themes';
-
 export default function Education() {
   return (
     <section className="relative flex flex-col justify-center items-center my-20 px-4 text-white min-h-[100svh]">
-      <h2 id="education" className="text-5xl sm:text-6xl font-bold mb-8 text-white text-center">
+      <h2 id="education" className="text-5xl sm:text-6xl font-bold mb-8 text-center">
         Education
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-5xl z-10">
         {/* UOC */}
-        <div className="bg-[#1f1f1f] rounded-lg shadow-lg">
-          <Inset side="top" clip="padding-box" pb="current">
-            <div className="flex flex-col items-center justify-center bg-[#1a1a1a] h-24">
-              <h3 className="text-2xl font-bold text-white text-center">
-                Bachelor of Software Engineering
-              </h3>
-              <p className="text-gray-400 text-base">Planned, starting September 2025</p>
-            </div>
-          </Inset>
+        <div className="bg-[#1f1f1f] rounded-lg shadow-lg overflow-hidden">
+          <div className="flex flex-col items-center justify-center bg-[#1a1a1a] h-24">
+            <h3 className="text-2xl font-bold text-center">Bachelor of Software Engineering</h3>
+            <p className="text-gray-400 text-base">Planned, starting September 2025</p>
+          </div>
           <div className="p-5">
             <h4 className="text-lg font-semibold text-white">
               Universitat Oberta de Catalunya (UOC)
@@ -33,15 +27,13 @@ export default function Education() {
         </div>
 
         {/* freeCodeCamp */}
-        <div className="bg-[#1f1f1f] rounded-lg shadow-lg">
-          <Inset side="top" clip="padding-box" pb="current">
-            <div className="flex flex-col items-center justify-center bg-[#1a1a1a] h-24">
-              <h3 className="text-2xl font-bold text-white text-center">
-                Certified Full Stack Developer Curriculum
-              </h3>
-              <p className="text-gray-400 text-base">2025 - Present</p>
-            </div>
-          </Inset>
+        <div className="bg-[#1f1f1f] rounded-lg shadow-lg overflow-hidden">
+          <div className="flex flex-col items-center justify-center bg-[#1a1a1a] h-24">
+            <h3 className="text-2xl font-bold text-center">
+              Certified Full Stack Developer Curriculum
+            </h3>
+            <p className="text-gray-400 text-base">2025 - Present</p>
+          </div>
           <div className="p-5">
             <h4 className="text-lg font-semibold text-white">freeCodeCamp</h4>
             <p className="text-gray-300 mt-4 leading-relaxed">
@@ -54,15 +46,11 @@ export default function Education() {
         </div>
 
         {/* The Odin Project */}
-        <div className="bg-[#1f1f1f] rounded-lg shadow-lg">
-          <Inset side="top" clip="padding-box" pb="current">
-            <div className="flex flex-col items-center justify-center bg-[#1a1a1a] h-24">
-              <h3 className="text-2xl font-bold text-white text-center">
-                Full Stack JavaScript Path
-              </h3>
-              <p className="text-gray-400 text-base">2025</p>
-            </div>
-          </Inset>
+        <div className="bg-[#1f1f1f] rounded-lg shadow-lg overflow-hidden">
+          <div className="flex flex-col items-center justify-center bg-[#1a1a1a] h-24">
+            <h3 className="text-2xl font-bold text-center">Full Stack JavaScript Path</h3>
+            <p className="text-gray-400 text-base">2025</p>
+          </div>
           <div className="p-5">
             <h4 className="text-lg font-semibold text-white">The Odin Project</h4>
             <p className="text-gray-300 mt-4 leading-relaxed">
@@ -74,15 +62,11 @@ export default function Education() {
         </div>
 
         {/* UNC */}
-        <div className="bg-[#1f1f1f] rounded-lg shadow-lg">
-          <Inset side="top" clip="padding-box" pb="current">
-            <div className="flex flex-col items-center justify-center bg-[#1a1a1a] h-24">
-              <h3 className="text-2xl font-bold text-white text-center">
-                Attended Systems Engineering
-              </h3>
-              <p className="text-gray-400 text-base">3 years completed (2013-2016)</p>
-            </div>
-          </Inset>
+        <div className="bg-[#1f1f1f] rounded-lg shadow-lg overflow-hidden">
+          <div className="flex flex-col items-center justify-center bg-[#1a1a1a] h-24">
+            <h3 className="text-2xl font-bold text-center">Attended Systems Engineering</h3>
+            <p className="text-gray-400 text-base">3 years completed (2013-2016)</p>
+          </div>
           <div className="p-5">
             <h4 className="text-lg font-semibold text-white">
               National University of Córdoba, Argentina

@@ -9,7 +9,7 @@ export function Header() {
     // Show header and button after 20s
     const timer = setTimeout(() => {
       setVisible(true);
-    }, 20000);
+    }, 14000);
 
     // Show on scroll
     const handleScroll = () => {
@@ -70,7 +70,7 @@ export function Header() {
         <a
           href="/nicolas_bugedo_fullstack_cv.pdf"
           download
-          className="inline-block text-sm px-3 py-2 text-gray-400 rounded-full bg-black/80 hover:bg-[#353535] duration-200 hover:scale-110"
+          className="absolute z-50 text-sm px-3 py-2 text-gray-400 rounded-full bg-black/80 hover:bg-[#353535] duration-200 hover:scale-110"
         >
           DOWNLOAD CV
         </a>

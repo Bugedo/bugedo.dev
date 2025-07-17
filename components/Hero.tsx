@@ -96,7 +96,7 @@ export default function Hero() {
 
           <span
             className="text-white text-2xl sm:text-3xl opacity-0 animate-fadeIn"
-            style={{ animationDelay: '9.5s', animationFillMode: 'forwards' }}
+            style={{ animationDelay: '9s', animationFillMode: 'forwards' }}
           >
             Node.js
           </span>
@@ -200,7 +200,7 @@ export default function Hero() {
 
         <div
           className="flex items-center justify-end opacity-0 animate-fadeIn"
-          style={{ animationDelay: '18s', animationFillMode: 'forwards' }}
+          style={{ animationDelay: '14s', animationFillMode: 'forwards' }}
         >
           <div className="flex gap-4 sm:gap-5 text-gray-400 self-end">
             <a
