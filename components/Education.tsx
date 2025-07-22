@@ -6,26 +6,7 @@ export default function Education() {
       <h2 id="education" className="text-5xl sm:text-6xl font-bold mb-8 text-center">
         Education
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-5xl z-10">
-        {/* UOC */}
-        <div className="bg-[#1f1f1f] rounded-lg shadow-lg overflow-hidden">
-          <div className="flex flex-col items-center justify-center bg-[#1a1a1a] h-24">
-            <h3 className="text-2xl font-bold text-center">Bachelor of Software Engineering</h3>
-            <p className="text-gray-400 text-base">Planned, starting September 2025</p>
-          </div>
-          <div className="p-5">
-            <h4 className="text-lg font-semibold text-white">
-              Universitat Oberta de Catalunya (UOC)
-            </h4>
-            <p className="text-gray-300 mt-4 leading-relaxed">
-              Starting in September 2025, I’ll begin a Bachelor’s degree in Software Engineering at
-              UOC. This program will deepen my understanding of computer science fundamentals,
-              software architecture, and collaborative development in a global context while
-              allowing me to keep a flexible, remote workflow.
-            </p>
-          </div>
-        </div>
-
+      <div className="grid grid-cols-1 gap-6 max-w-5xl z-10">
         {/* freeCodeCamp */}
         <div className="bg-[#1f1f1f] rounded-lg shadow-lg overflow-hidden">
           <div className="flex flex-col items-center justify-center bg-[#1a1a1a] h-24">

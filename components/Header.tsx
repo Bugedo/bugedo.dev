@@ -6,16 +6,12 @@ export function Header() {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    // Show header and button after 20s
-    const timer = setTimeout(() => {
-      setVisible(true);
-    }, 14000);
+    const timer = setTimeout(() => setVisible(true), 14000);
 
-    // Show on scroll
     const handleScroll = () => {
       if (!visible && window.scrollY > 50) {
         setVisible(true);
-        clearTimeout(timer); // cancel timer if scrolled
+        clearTimeout(timer);
       }
     };
 
@@ -27,6 +23,15 @@ export function Header() {
     };
   }, [visible]);
 
+  const scrollToSection = (id: string) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+      // Opcional: quitar cualquier hash de la URL
+      history.replaceState(null, '', ' ');
+    }
+  };
+
   return (
     <>
       {/* Header */}
@@ -35,7 +40,7 @@ export function Header() {
           visible ? 'opacity-100' : 'opacity-0'
         }`}
       >
-        <a href="#home" className="flex items-center gap-3">
+        <button onClick={() => scrollToSection('home')} className="flex items-center gap-3">
           <Image
             src="/logo.svg"
             alt="Logo"
@@ -43,21 +48,18 @@ export function Header() {
             height={32}
             className="hover:scale-110 transition-transform duration-300"
           />
-        </a>
+        </button>
 
         <nav className="flex gap-6 text-sm text-gray-400">
-          <a href="#projects" className="hover:text-white">
-            Projects
-          </a>
-          <a href="#work" className="hover:text-white">
+          <button onClick={() => scrollToSection('work')} className="hover:text-white">
             Work
-          </a>
-          <a href="#education" className="hover:text-white">
+          </button>
+          <button onClick={() => scrollToSection('education')} className="hover:text-white">
             Education
-          </a>
-          <a href="#contact" className="hover:text-white">
+          </button>
+          <button onClick={() => scrollToSection('contact')} className="hover:text-white">
             Contact
-          </a>
+          </button>
         </nav>
       </header>
 
