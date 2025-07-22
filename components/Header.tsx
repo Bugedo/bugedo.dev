@@ -51,6 +51,9 @@ export function Header() {
         </button>
 
         <nav className="flex gap-6 text-sm text-gray-400">
+          <button onClick={() => scrollToSection('projects')} className="hover:text-white">
+            Projects
+          </button>
           <button onClick={() => scrollToSection('work')} className="hover:text-white">
             Work
           </button>
