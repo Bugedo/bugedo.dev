@@ -36,36 +36,53 @@ export default function WorkExperience() {
           <div className="relative w-full h-[600px]">
             {/* Tab: Fullstack */}
             <Tabs.Content value="fullstack">
-              <div className="space-y-6">
-                <h3 className="text-4xl sm:text-5xl font-bold text-gray-100">
-                  Full Stack Developer & Co-Founder
-                </h3>
-                <p className="text-gray-400 text-xl sm:text-2xl mb-4">
-                  Developing Bridges · 2025 - Present
-                </p>
-                <p className="text-lg sm:text-2xl text-gray-300 leading-relaxed mb-4">
-                  After relocating to Europe and reflecting deeply on my career path, I decided to
-                  return to tech with renewed energy and purpose. Together with a long-time
-                  collaborator and friend (someone I had worked with for years in Solar Energy) we
-                  co-founded{' '}
-                  <a
-                    href="https://developingbridges.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="uppercase text-gray-300 hover:text-white inline-flex items-center gap-1 transition-colors"
-                  >
-                    DEVELOPING BRIDGES
-                    <ExternalLink className="w-5 h-5" />
-                  </a>{' '}
-                  to help businesses bridge their ideas with technology.
-                </p>
-                <p className="text-lg sm:text-2xl text-gray-300 leading-relaxed">
-                  At Developing Bridges, I design and develop full stack web applications that
-                  prioritize usability and performance. From building REST APIs and integrating
-                  third-party services to crafting clean and accessible interfaces, I collaborate
-                  with a small but highly motivated team. Our shared journey of transitioning into
-                  tech gives us a unique perspective on problem-solving and innovation.
-                </p>
+              <div className="space-y-12">
+                {/* Ewents */}
+                <div className="space-y-6">
+                  <h3 className="text-4xl sm:text-5xl font-bold text-gray-100">
+                    Full Stack Engineer
+                  </h3>
+                  <p className="text-gray-400 text-xl sm:text-2xl mb-4">
+                    Ewents (USA) · Aug 2025 - Present
+                  </p>
+                  <p className="text-lg sm:text-2xl text-gray-300 leading-relaxed">
+                    Working remotely with a US-based team, I contribute to the development of
+                    internal CRM systems and scalable applications. My role includes building and
+                    maintaining full stack solutions, integrating APIs, and deploying serverless
+                    backends optimized for performance and reliability.
+                  </p>
+                </div>
+
+                {/* Developing Bridges */}
+                <div className="space-y-6">
+                  <h3 className="text-4xl sm:text-5xl font-bold text-gray-100">
+                    Full Stack Developer & Co-Founder
+                  </h3>
+                  <p className="text-gray-400 text-xl sm:text-2xl mb-4">
+                    Developing Bridges · May 2025 - Present
+                  </p>
+                  <p className="text-lg sm:text-2xl text-gray-300 leading-relaxed mb-4">
+                    After relocating to Europe and reflecting deeply on my career path, I decided to
+                    return to tech with renewed energy and purpose. Together with a long-time
+                    collaborator and friend we co-founded{' '}
+                    <a
+                      href="https://developingbridges.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="uppercase text-gray-300 hover:text-white inline-flex items-center gap-1 transition-colors"
+                    >
+                      DEVELOPING BRIDGES
+                      <ExternalLink className="w-5 h-5" />
+                    </a>{' '}
+                    to help businesses bridge their ideas with technology.
+                  </p>
+                  <p className="text-lg sm:text-2xl text-gray-300 leading-relaxed">
+                    At Developing Bridges, I design and develop full stack web applications that
+                    prioritize usability and performance. From building REST APIs and integrating
+                    third-party services to crafting clean and accessible interfaces, I collaborate
+                    with a small but highly motivated team.
+                  </p>
+                </div>
               </div>
             </Tabs.Content>
 
@@ -82,14 +99,11 @@ export default function WorkExperience() {
                   For several years, I worked independently and with small teams, delivering
                   reliable electrical solutions for residential and commercial clients. I
                   specialized in designing and implementing energy-efficient systems, including
-                  heating systems and solar panels, combining technical know-how with hands-on
-                  problem solving.
+                  heating systems and solar panels.
                 </p>
                 <p className="text-lg sm:text-2xl text-gray-300 leading-relaxed">
                   This experience taught me to approach challenges with precision and creativity, to
-                  adapt quickly, and to communicate effectively with clients. These skills became
-                  the foundation for my transition into the software world, where I continue to
-                  build innovative solutions.
+                  adapt quickly, and to communicate effectively with clients.
                 </p>
               </div>
             </Tabs.Content>

@@ -52,12 +52,12 @@ export function Footer() {
             <li>
               <span className="font-medium text-gray-100">GitHub:</span>{' '}
               <a
-                href="https://github.com/CaimanBrujo"
+                href="https://github.com/Bugedo"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="no-underline text-gray-400 hover:text-white transition-colors duration-200"
               >
-                github.com/caimanbrujo
+                github.com/Bugedo
               </a>
             </li>
             <li>
@@ -79,24 +79,32 @@ export function Footer() {
           <h4 className="text-gray-100 font-semibold mb-4">Tech Stack</h4>
           <DataList.Root orientation="vertical" size="2">
             <DataList.Item>
+              <DataList.Label color="gray">Lenguages</DataList.Label>
+              <DataList.Value>JavaScript, TypeScript, HTML5, CSS3</DataList.Value>
+            </DataList.Item>
+            <DataList.Item>
               <DataList.Label color="gray">Frontend</DataList.Label>
-              <DataList.Value>
-                Next.js, React, TypeScript, JavaScript, Tailwind CSS, HTML5, CSS3
-              </DataList.Value>
+              <DataList.Value>Next.js, React, Angular 20, Tailwind CSS</DataList.Value>
             </DataList.Item>
             <DataList.Item>
               <DataList.Label color="gray">Backend</DataList.Label>
-              <DataList.Value>Node.js, Express, REST APIs, Supabase, BaaS</DataList.Value>
+              <DataList.Value>Node.js, Hono, Express, REST APIs, Supabase, BaaS</DataList.Value>
             </DataList.Item>
             <DataList.Item>
               <DataList.Label color="gray">Databases</DataList.Label>
-              <DataList.Value>PostgreSQL, MongoDB</DataList.Value>
+              <DataList.Value>PostgreSQL, MongoDB, Prisma, SupabaseJS</DataList.Value>
+            </DataList.Item>
+            <DataList.Item>
+              <DataList.Label color="gray">Runtime & Package Manager</DataList.Label>
+              <DataList.Value>Bun, npm</DataList.Value>
+            </DataList.Item>
+            <DataList.Item>
+              <DataList.Label color="gray">Deployment</DataList.Label>
+              <DataList.Value>Cloudflare Workers, Vercel, Railway</DataList.Value>
             </DataList.Item>
             <DataList.Item>
               <DataList.Label color="gray">Tools</DataList.Label>
-              <DataList.Value>
-                Git & GitHub, Vercel, Railway, Jest, Webpack, Vite, ESLint, Prettier
-              </DataList.Value>
+              <DataList.Value>Git & GitHub, Jest, Webpack, Vite, ESLint, Prettier</DataList.Value>
             </DataList.Item>
             <DataList.Item>
               <DataList.Label color="gray">Design</DataList.Label>

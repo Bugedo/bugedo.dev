@@ -204,7 +204,7 @@ export default function Hero() {
         >
           <div className="flex gap-4 sm:gap-5 text-gray-400 self-end">
             <a
-              href="https://github.com/CaimanBrujo"
+              href="https://github.com/Bugedo"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-white transition-colors hover:scale-110 duration-200"
