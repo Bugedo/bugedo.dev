@@ -2,7 +2,7 @@
 
 export default function Education() {
   return (
-    <section className="relative flex flex-col justify-start sm:justify-center items-center py-16 sm:py-20 px-4 text-white min-h-[80vh] sm:min-h-[100svh] mt-48 sm:mt-20">
+    <section className="relative flex flex-col justify-start sm:justify-center items-center py-16 sm:py-20 px-4 text-white min-h-[80vh] sm:min-h-[100svh]">
       <h2 id="education" className="text-5xl sm:text-6xl font-bold mb-8 text-center">
         Education
       </h2>
