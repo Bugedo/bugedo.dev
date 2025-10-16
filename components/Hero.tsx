@@ -61,12 +61,40 @@ export default function Hero() {
             className="text-gray-300 opacity-0 animate-fadeIn"
             style={{ animationDelay: '14s', animationFillMode: 'forwards' }}
           >
-            , I craft high-performance web experiences with modern tools like{' '}
+            , I build web applications with{' '}
           </span>
 
           <span
             className="text-white text-2xl sm:text-3xl opacity-0 animate-fadeIn"
             style={{ animationDelay: '8s', animationFillMode: 'forwards' }}
+          >
+            React
+          </span>
+
+          <span
+            className="text-gray-300 opacity-0 animate-fadeIn"
+            style={{ animationDelay: '14s', animationFillMode: 'forwards' }}
+          >
+            ,{' '}
+          </span>
+
+          <span
+            className="text-white text-2xl sm:text-3xl opacity-0 animate-fadeIn"
+            style={{ animationDelay: '8.2s', animationFillMode: 'forwards' }}
+          >
+            Angular
+          </span>
+
+          <span
+            className="text-gray-300 opacity-0 animate-fadeIn"
+            style={{ animationDelay: '14s', animationFillMode: 'forwards' }}
+          >
+            , and{' '}
+          </span>
+
+          <span
+            className="text-white text-2xl sm:text-3xl opacity-0 animate-fadeIn"
+            style={{ animationDelay: '8.5s', animationFillMode: 'forwards' }}
           >
             Next.js
           </span>
@@ -75,23 +103,7 @@ export default function Hero() {
             className="text-gray-300 opacity-0 animate-fadeIn"
             style={{ animationDelay: '14s', animationFillMode: 'forwards' }}
           >
-            {' '}
-            and{' '}
-          </span>
-
-          <span
-            className="text-white text-2xl sm:text-3xl opacity-0 animate-fadeIn"
-            style={{ animationDelay: '8.5s', animationFillMode: 'forwards' }}
-          >
-            TypeScript
-          </span>
-
-          <span
-            className="text-gray-300 opacity-0 animate-fadeIn"
-            style={{ animationDelay: '14s', animationFillMode: 'forwards' }}
-          >
-            {' '}
-            on the frontend, and{' '}
+            , backed by{' '}
           </span>
 
           <span
@@ -106,7 +118,7 @@ export default function Hero() {
             style={{ animationDelay: '14s', animationFillMode: 'forwards' }}
           >
             {' '}
-            with{' '}
+            and{' '}
           </span>
 
           <span
@@ -120,13 +132,27 @@ export default function Hero() {
             className="text-gray-300 opacity-0 animate-fadeIn"
             style={{ animationDelay: '14s', animationFillMode: 'forwards' }}
           >
-            {' '}
-            on the backend. I work with{' '}
+            , using{' '}
           </span>
 
           <span
             className="text-white text-2xl sm:text-3xl opacity-0 animate-fadeIn"
             style={{ animationDelay: '10s', animationFillMode: 'forwards' }}
+          >
+            TypeScript
+          </span>
+
+          <span
+            className="text-gray-300 opacity-0 animate-fadeIn"
+            style={{ animationDelay: '14s', animationFillMode: 'forwards' }}
+          >
+            {' '}
+            across the stack. I manage data with{' '}
+          </span>
+
+          <span
+            className="text-white text-2xl sm:text-3xl opacity-0 animate-fadeIn"
+            style={{ animationDelay: '10.5s', animationFillMode: 'forwards' }}
           >
             PostgreSQL
           </span>
@@ -141,22 +167,21 @@ export default function Hero() {
 
           <span
             className="text-white text-2xl sm:text-3xl opacity-0 animate-fadeIn"
-            style={{ animationDelay: '10.5s', animationFillMode: 'forwards' }}
+            style={{ animationDelay: '11s', animationFillMode: 'forwards' }}
           >
-            MongoDB
+            Supabase
           </span>
 
           <span
             className="text-gray-300 opacity-0 animate-fadeIn"
             style={{ animationDelay: '14s', animationFillMode: 'forwards' }}
           >
-            {' '}
-            for data management, deploy on{' '}
+            , and deploy apps on{' '}
           </span>
 
           <span
             className="text-white text-2xl sm:text-3xl opacity-0 animate-fadeIn"
-            style={{ animationDelay: '11s', animationFillMode: 'forwards' }}
+            style={{ animationDelay: '11.5s', animationFillMode: 'forwards' }}
           >
             Vercel
           </span>
@@ -171,23 +196,9 @@ export default function Hero() {
 
           <span
             className="text-white text-2xl sm:text-3xl opacity-0 animate-fadeIn"
-            style={{ animationDelay: '11.5s', animationFillMode: 'forwards' }}
-          >
-            Railway
-          </span>
-
-          <span
-            className="text-gray-300 opacity-0 animate-fadeIn"
-            style={{ animationDelay: '14s', animationFillMode: 'forwards' }}
-          >
-            , and design clean interfaces using{' '}
-          </span>
-
-          <span
-            className="text-white text-2xl sm:text-3xl opacity-0 animate-fadeIn"
             style={{ animationDelay: '12s', animationFillMode: 'forwards' }}
           >
-            Figma
+            Railway
           </span>
 
           <span

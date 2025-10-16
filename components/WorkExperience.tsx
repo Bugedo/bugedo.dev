@@ -33,7 +33,7 @@ export default function WorkExperience() {
           </Tabs.List>
 
           {/* Content Wrapper */}
-          <div className="relative w-full h-[600px]">
+          <div className="relative w-full h-[800px]">
             {/* Tab: Fullstack */}
             <Tabs.Content value="fullstack">
               <div className="space-y-12">
@@ -46,25 +46,35 @@ export default function WorkExperience() {
                     Ewents (USA) · Aug 2025 - Present
                   </p>
                   <p className="text-lg sm:text-2xl text-gray-300 leading-relaxed">
-                    Working remotely with a US-based team, I contribute to the development of
-                    internal CRM systems and scalable applications. My role includes building and
-                    maintaining full stack solutions, integrating APIs, and deploying serverless
-                    backends optimized for performance and reliability.
+                    Develop and maintain a comprehensive internal CRM system for managing
+                    operations, contracts, and financials using a modern tech stack including Hono
+                    on Cloudflare Workers for serverless API deployment, Supabase/PostgreSQL with
+                    Prisma for database management, and Angular 18+ with Signals for responsive
+                    frontend interfaces.
+                  </p>
+                  <p className="text-lg sm:text-2xl text-gray-300 leading-relaxed">
+                    Built core features including automated invoicing and commission calculation
+                    systems, multi-model contract management (Staff Augmentation and Custom
+                    Development), real-time timesheet tracking with approval workflows, and
+                    financial dashboards with profitability analytics. Architected
+                    microservices-based backend achieving sub-50ms global response times, optimized
+                    database queries for complex business logic, and implemented CI/CD pipelines for
+                    edge deployment, reducing manual processing workflows by 80% and enabling
+                    real-time operational visibility across the organization.
                   </p>
                 </div>
 
                 {/* Developing Bridges */}
                 <div className="space-y-6">
                   <h3 className="text-4xl sm:text-5xl font-bold text-gray-100">
-                    Full Stack Developer & Co-Founder
+                    Full Stack Developer & Founder
                   </h3>
                   <p className="text-gray-400 text-xl sm:text-2xl mb-4">
                     Developing Bridges · May 2025 - Present
                   </p>
                   <p className="text-lg sm:text-2xl text-gray-300 leading-relaxed mb-4">
                     After relocating to Europe and reflecting deeply on my career path, I decided to
-                    return to tech with renewed energy and purpose. Together with a long-time
-                    collaborator and friend we co-founded{' '}
+                    return to tech with renewed energy and purpose. I founded{' '}
                     <a
                       href="https://developingbridges.com"
                       target="_blank"
