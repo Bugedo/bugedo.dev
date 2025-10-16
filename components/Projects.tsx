@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import { ExternalLink, Github } from 'lucide-react';
 
 export default function Projects() {
@@ -16,9 +17,11 @@ export default function Projects() {
           {/* Project 1 */}
           <div className="bg-[#1f1f1f] rounded-2xl p-6 hover:scale-[1.02] transition-transform">
             <div className="relative w-full h-64 rounded-xl overflow-hidden mb-4">
-              <img
+              <Image
                 src="/devbridges.jpg"
                 alt="Developing Bridges Preview"
+                width={400}
+                height={256}
                 className="object-cover w-full h-full rounded-xl hover:scale-105 transition-transform duration-300"
               />
             </div>
@@ -55,9 +58,11 @@ export default function Projects() {
           {/* Project 2 - Mundo Padel Club */}
           <div className="bg-[#1f1f1f] rounded-2xl p-6 hover:scale-[1.02] transition-transform">
             <div className="relative w-full h-64 rounded-xl overflow-hidden mb-4">
-              <img
+              <Image
                 src="/mundopadel.jpg"
                 alt="Mundo Padel Club Preview"
+                width={400}
+                height={256}
                 className="object-cover w-full h-full rounded-xl hover:scale-105 transition-transform duration-300"
               />
             </div>
@@ -96,9 +101,11 @@ export default function Projects() {
           {/* Project 3 - Prepaga Argentina */}
           <div className="bg-[#1f1f1f] rounded-2xl p-6 hover:scale-[1.02] transition-transform">
             <div className="relative w-full h-64 rounded-xl overflow-hidden mb-4">
-              <img
+              <Image
                 src="/prepagaargentina.jpg"
                 alt="Prepaga Argentina Preview"
+                width={400}
+                height={256}
                 className="object-cover w-full h-full rounded-xl hover:scale-105 transition-transform duration-300"
               />
             </div>
@@ -135,9 +142,11 @@ export default function Projects() {
           {/* Project 4 - Yas y Manu */}
           <div className="bg-[#1f1f1f] rounded-2xl p-6 hover:scale-[1.02] transition-transform">
             <div className="relative w-full h-64 rounded-xl overflow-hidden mb-4">
-              <img
+              <Image
                 src="/yasymanu.jpg"
                 alt="Yas y Manu Wedding Invitation Preview"
+                width={400}
+                height={256}
                 className="object-cover w-full h-full rounded-xl hover:scale-105 transition-transform duration-300"
               />
             </div>

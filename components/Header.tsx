@@ -73,7 +73,7 @@ export function Header() {
         }`}
       >
         <a
-          href="/nicolas_bugedo_fullstack_cv.pdf"
+          href="/Nicolas_Bugedo_Fullstack_CV.pdf"
           download
           className="absolute z-50 text-sm px-3 py-2 text-gray-400 rounded-full bg-black/80 hover:bg-[#353535] duration-200 hover:scale-110"
         >

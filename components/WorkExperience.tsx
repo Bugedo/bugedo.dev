@@ -86,11 +86,27 @@ export default function WorkExperience() {
                     </a>{' '}
                     to help businesses bridge their ideas with technology.
                   </p>
+                  <p className="text-lg sm:text-2xl text-gray-300 leading-relaxed mb-4">
+                    Designed and developed full stack web applications using Next.js, React,
+                    TypeScript, Tailwind CSS, and modern development workflows, delivering
+                    responsive and accessible user interfaces.
+                  </p>
+                  <p className="text-lg sm:text-2xl text-gray-300 leading-relaxed mb-4">
+                    Built and maintained REST APIs, integrated third-party services, and managed
+                    deployments for production-ready applications.
+                  </p>
+                  <p className="text-lg sm:text-2xl text-gray-300 leading-relaxed mb-4">
+                    Implemented authentication and data management using Supabase, ensuring secure
+                    and scalable user management.
+                  </p>
+                  <p className="text-lg sm:text-2xl text-gray-300 leading-relaxed mb-4">
+                    Configured and maintained Hetzner servers running Ubuntu for production
+                    environments, implementing best practices for security and performance.
+                  </p>
                   <p className="text-lg sm:text-2xl text-gray-300 leading-relaxed">
-                    At Developing Bridges, I design and develop full stack web applications that
-                    prioritize usability and performance. From building REST APIs and integrating
-                    third-party services to crafting clean and accessible interfaces, I collaborate
-                    with a small but highly motivated team.
+                    Deployed and managed self-hosted Supabase instances via Docker, enabling
+                    scalable backend infrastructure with high availability and simplified
+                    maintenance.
                   </p>
                 </div>
               </div>
