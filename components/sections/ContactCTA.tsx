@@ -18,7 +18,6 @@ export function ContactCTA() {
 
         <Reveal delay={0.15}>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
-            <ButtonLink href={`mailto:${site.email}`}>Get in touch</ButtonLink>
             <ButtonLink href={site.cvUrl} variant="ghost" download>
               Download CV
             </ButtonLink>
