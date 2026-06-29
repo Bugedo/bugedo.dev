@@ -4,7 +4,6 @@ import { WhatIDo } from '@/components/sections/WhatIDo';
 import { WhyMe } from '@/components/sections/WhyMe';
 import { Process } from '@/components/sections/Process';
 import { SelectedWork } from '@/components/sections/SelectedWork';
-import { Purpose } from '@/components/sections/Purpose';
 import { ContactCTA } from '@/components/sections/ContactCTA';
 
 export default function Home() {
@@ -16,7 +15,6 @@ export default function Home() {
       <WhyMe />
       <Process />
       <SelectedWork />
-      <Purpose />
       <ContactCTA />
     </>
   );

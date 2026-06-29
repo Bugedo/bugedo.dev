@@ -1,7 +1,6 @@
 'use client';
 
-import { site, footerLinks } from '@/data/site';
-import { scrollToSection } from '@/lib/scroll';
+import { site, contactLinks } from '@/data/site';
 
 export function Footer() {
   return (
@@ -16,39 +15,17 @@ export function Footer() {
     >
       <div className="pointer-events-none absolute inset-0 bg-surface/95" aria-hidden="true" />
 
-      <div className="relative z-10 mx-auto grid max-w-7xl grid-cols-1 gap-12 sm:grid-cols-3">
+      <div className="relative z-10 mx-auto flex max-w-7xl flex-col gap-12 sm:flex-row sm:justify-between">
         <div>
-          <h4 className="font-display text-sm font-bold uppercase tracking-wider">Sitemap</h4>
-          <ul className="mt-4 space-y-2">
-            {footerLinks.sitemap.map((link) => (
-              <li key={link.id}>
-                <button
-                  onClick={() => scrollToSection(link.id)}
-                  className="text-sm text-muted transition-colors hover:text-fg"
-                >
-                  {link.label}
-                </button>
-              </li>
-            ))}
-          </ul>
+          <p className="font-display text-lg font-bold">{site.name}</p>
+          <p className="mt-2 text-sm text-muted">{site.role}</p>
         </div>
 
         <div>
           <h4 className="font-display text-sm font-bold uppercase tracking-wider">Contact</h4>
-          <ul className="mt-4 space-y-2 text-sm text-muted">
-            <li>
-              <a href={`mailto:${site.email}`} className="transition-colors hover:text-fg">
-                {site.email}
-              </a>
-            </li>
-            <li>{site.location}</li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 className="font-display text-sm font-bold uppercase tracking-wider">Social</h4>
+          <p className="mt-4 text-sm text-muted">{site.availability}</p>
           <ul className="mt-4 space-y-2">
-            {footerLinks.social.map((link) => (
+            {contactLinks.map((link) => (
               <li key={link.label}>
                 <a
                   href={link.href}

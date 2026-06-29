@@ -13,9 +13,7 @@ export function ContactCTA() {
           <h2 className="font-display text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
             # Contact.
           </h2>
-          <p className="mx-auto mt-4 max-w-xl text-lg text-muted">
-            Based in Córdoba, Argentina — available for remote work.
-          </p>
+          <p className="mx-auto mt-4 max-w-xl text-lg text-muted">{site.availability}</p>
         </Reveal>
 
         <Reveal delay={0.15}>

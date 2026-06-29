@@ -1,7 +1,7 @@
 export const site = {
   name: 'Nicolás Bugedo',
   role: 'Full Stack Developer & Founder',
-  location: 'Córdoba, Argentina · Remote',
+  availability: 'Available for remote work',
   tagline: 'I build software.',
   subheadline:
     'Production-grade web applications that replace manual workflows with automated, data-driven systems.',
@@ -19,7 +19,6 @@ export const navLinks = [
   { label: 'Why me', id: 'why-me' },
   { label: 'Process', id: 'process' },
   { label: 'Work', id: 'work' },
-  { label: 'Purpose', id: 'purpose' },
   { label: 'Contact', id: 'contact' },
 ] as const;
 
@@ -138,25 +137,9 @@ export const projects = [
   },
 ] as const;
 
-export const purpose = {
-  title: 'Purpose.',
-  paragraphs: [
-    'Software should replace manual work — not add another layer of complexity. I focus on systems that teams and customers actually use.',
-    'Through Developing Bridges I work directly with founders and businesses, mostly in the US and Europe, without the overhead of a traditional agency.',
-    'A background outside tech keeps me grounded: clear communication, practical trade-offs, and shipping what was promised.',
-  ],
-} as const;
-
-export const footerLinks = {
-  sitemap: [
-    { label: 'What I do', id: 'what-i-do' },
-    { label: 'Work', id: 'work' },
-    { label: 'Contact', id: 'contact' },
-  ],
-  social: [
-    { label: 'GitHub', href: site.github },
-    { label: 'LinkedIn', href: site.linkedin },
-    { label: 'Developing Bridges', href: site.developingBridges },
-    { label: 'Email', href: `mailto:${site.email}` },
-  ],
-} as const;
+export const contactLinks = [
+  { label: 'Email', href: `mailto:${site.email}` },
+  { label: 'GitHub', href: site.github },
+  { label: 'LinkedIn', href: site.linkedin },
+  { label: 'Developing Bridges', href: site.developingBridges },
+] as const;
