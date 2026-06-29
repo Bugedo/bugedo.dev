@@ -1,10 +1,9 @@
 import { render, screen } from '@testing-library/react';
-import Home from '../pages/index';
+import Home from '../app/page';
 
 describe('Home page', () => {
-  it('renders heading', () => {
+  it('renders work experience section', () => {
     render(<Home />);
-    const heading = screen.getByText(/Tailwind v4 Next-ready/i);
-    expect(heading).toBeInTheDocument();
+    expect(screen.getByText(/Work Experience/i)).toBeInTheDocument();
   });
 });

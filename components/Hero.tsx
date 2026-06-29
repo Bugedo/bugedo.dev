@@ -1,6 +1,6 @@
 'use client';
 
-import { Github, Linkedin } from 'lucide-react';
+import { GithubIcon, LinkedinIcon } from '@/components/icons/BrandIcons';
 import { useState, useEffect } from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 
@@ -220,7 +220,7 @@ export default function Hero() {
               rel="noopener noreferrer"
               className="hover:text-white transition-colors hover:scale-110 duration-200"
             >
-              <Github className="w-10 h-10 sm:w-12 sm:h-12" />
+              <GithubIcon className="w-10 h-10 sm:w-12 sm:h-12" />
             </a>
             <a
               href="https://www.linkedin.com/in/nicobugedo/"
@@ -228,7 +228,7 @@ export default function Hero() {
               rel="noopener noreferrer"
               className="hover:text-white transition-colors hover:scale-110 duration-200"
             >
-              <Linkedin className="w-10 h-10 sm:w-12 sm:h-12" />
+              <LinkedinIcon className="w-10 h-10 sm:w-12 sm:h-12" />
             </a>
           </div>
         </div>

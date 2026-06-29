@@ -2,7 +2,8 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { ExternalLink, Github } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
+import { GithubIcon } from '@/components/icons/BrandIcons';
 
 export default function Projects() {
   return (
@@ -50,7 +51,7 @@ export default function Projects() {
                 className="flex items-center gap-1 text-gray-300 hover:text-white transition-colors"
               >
                 GitHub Repo
-                <Github className="w-5 h-5" />
+                <GithubIcon className="w-5 h-5" />
               </a>
             </div>
           </div>
@@ -93,7 +94,7 @@ export default function Projects() {
                 className="flex items-center gap-1 text-gray-300 hover:text-white transition-colors"
               >
                 GitHub Repo
-                <Github className="w-5 h-5" />
+                <GithubIcon className="w-5 h-5" />
               </a>
             </div>
           </div>
@@ -134,7 +135,7 @@ export default function Projects() {
                 className="flex items-center gap-1 text-gray-300 hover:text-white transition-colors"
               >
                 GitHub Repo
-                <Github className="w-5 h-5" />
+                <GithubIcon className="w-5 h-5" />
               </a>
             </div>
           </div>
@@ -176,7 +177,7 @@ export default function Projects() {
                 className="flex items-center gap-1 text-gray-300 hover:text-white transition-colors"
               >
                 GitHub Repo
-                <Github className="w-5 h-5" />
+                <GithubIcon className="w-5 h-5" />
               </a>
             </div>
           </div>
