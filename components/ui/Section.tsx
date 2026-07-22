@@ -18,7 +18,7 @@ export function Section({ id, title, subtitle, children, className = '' }: Secti
             {title}
           </h2>
           {subtitle && (
-            <p className="mt-4 max-w-2xl text-lg text-muted sm:text-xl">{subtitle}</p>
+            <p className="mt-4 max-w-2xl text-lg text-fg/80 sm:text-xl">{subtitle}</p>
           )}
         </Reveal>
         <div className="mt-12">{children}</div>

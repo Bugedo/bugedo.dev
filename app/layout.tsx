@@ -1,5 +1,6 @@
 import { Inter, Space_Grotesk } from 'next/font/google';
 import '../styles/globals.css';
+import { LocaleProvider } from '@/components/providers/LocaleProvider';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 
@@ -16,9 +17,9 @@ const body = Inter({
 });
 
 export const metadata = {
-  title: 'Nicolás Bugedo — Full Stack Developer & Founder',
+  title: 'Nicolás Bugedo',
   description:
-    'Production-grade web applications that replace manual workflows. Founder of Developing Bridges. Based in Córdoba, Argentina — remote.',
+    'Full Stack Developer available for remote work. Production web apps, end to end delivery. Comfortable with any modern stack.',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -32,9 +33,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="manifest" href="/site.webmanifest" />
       </head>
       <body className="flex min-h-screen flex-col font-body antialiased">
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
+        <LocaleProvider>
+          <Header />
+          <main className="flex-1">{children}</main>
+          <Footer />
+        </LocaleProvider>
       </body>
     </html>
   );
