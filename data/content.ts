@@ -94,6 +94,12 @@ type LocaleCopy = {
   skillsTitle: string;
   skillsIntro: string;
   skillLabels: Record<(typeof skillGroupsShared)[number]['labelKey'], string>;
+  educationTitle: string;
+  education: {
+    title: string;
+    school: string;
+    period: string;
+  }[];
   contactTitle: string;
   downloadCv: string;
   email: string;
@@ -109,11 +115,12 @@ type LocaleCopy = {
 const en: LocaleCopy = {
   role: 'Full Stack Developer & Founder',
   availability: 'Available for remote work',
-  stackFlexible: 'Comfortable with any modern stack. I adapt to the tools your team already ships with.',
+  stackFlexible: 'Comfortable with any modern stack. I adapt to the tools you want to use.',
   nav: [
     { label: 'Experience', id: 'experience' },
     { label: 'Work', id: 'work' },
     { label: 'Skills', id: 'skills' },
+    { label: 'Education', id: 'education' },
     { label: 'Contact', id: 'contact' },
   ],
   experienceTitle: '# Experience.',
@@ -126,7 +133,7 @@ const en: LocaleCopy = {
       period: 'May 2025 to Present',
       location: 'Remote',
       summary:
-        'Building and shipping production web products end to end for US and EU clients: ordering, booking, and client platforms.',
+        'Building and shipping production web products end to end: ordering, booking, and client platforms.',
     },
     {
       role: 'Full Stack Engineer (Contract)',
@@ -189,6 +196,19 @@ const en: LocaleCopy = {
     infra: 'Infrastructure',
     ai: 'AI Workflow',
   },
+  educationTitle: '# Education.',
+  education: [
+    {
+      title: 'Information Systems Engineering (3 years)',
+      school: 'Universidad Tecnológica Nacional FRC, Córdoba',
+      period: '2013 to 2016',
+    },
+    {
+      title: 'Full Stack Developer Curriculum',
+      school: 'The Odin Project · freeCodeCamp',
+      period: '2024 to 2025',
+    },
+  ],
   contactTitle: '# Contact.',
   downloadCv: 'Download CV',
   email: 'Email',
@@ -204,11 +224,12 @@ const en: LocaleCopy = {
 const es: LocaleCopy = {
   role: 'Desarrollador Full Stack & Fundador',
   availability: 'Disponible para trabajo remoto',
-  stackFlexible: 'Cómodo con cualquier stack moderno. Me adapto a las herramientas que ya usa tu equipo.',
+  stackFlexible: 'Cómodo con cualquier stack moderno. Me adapto a las herramientas que quieras usar.',
   nav: [
     { label: 'Experiencia', id: 'experience' },
     { label: 'Trabajo', id: 'work' },
     { label: 'Skills', id: 'skills' },
+    { label: 'Educación', id: 'education' },
     { label: 'Contacto', id: 'contact' },
   ],
   experienceTitle: '# Experiencia.',
@@ -221,7 +242,7 @@ const es: LocaleCopy = {
       period: 'Mayo 2025 a Presente',
       location: 'Remoto',
       summary:
-        'Diseño y entrega de productos web en producción de punta a punta para clientes en EE.UU. y Europa: pedidos, reservas y plataformas para clientes.',
+        'Diseño y entrega de productos web en producción de punta a punta: pedidos, reservas y plataformas para clientes.',
     },
     {
       role: 'Ingeniero Full Stack (Contrato)',
@@ -284,6 +305,19 @@ const es: LocaleCopy = {
     infra: 'Infraestructura',
     ai: 'Flujo con IA',
   },
+  educationTitle: '# Educación.',
+  education: [
+    {
+      title: 'Ingeniería en Sistemas de Información (3 años)',
+      school: 'Universidad Tecnológica Nacional FRC, Córdoba',
+      period: '2013 a 2016',
+    },
+    {
+      title: 'Currículo Full Stack Developer',
+      school: 'The Odin Project · freeCodeCamp',
+      period: '2024 a 2025',
+    },
+  ],
   contactTitle: '# Contacto.',
   downloadCv: 'Descargar CV',
   email: 'Email',
