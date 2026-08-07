@@ -36,13 +36,23 @@ export function Hero() {
             </h1>
           </Reveal>
 
-          <Reveal delay={0.12}>
+          <Reveal delay={0.09}>
+            <div className="mt-4 inline-flex items-center gap-2 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3 py-1.5 text-sm text-emerald-400">
+              <span className="relative flex h-2 w-2">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
+                <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400" />
+              </span>
+              {t.availability}
+            </div>
+          </Reveal>
+
+          <Reveal delay={0.14}>
             <p className="mt-6 max-w-2xl text-base text-fg/80 sm:text-lg">{t.stackFlexible}</p>
           </Reveal>
 
-          <Reveal delay={0.2}>
+          <Reveal delay={0.22}>
             <div className="mt-10 flex flex-wrap items-center gap-4">
-              <ButtonLink href={shared.cvUrl} download>
+              <ButtonLink href={t.cvUrl} download>
                 {t.downloadCv}
               </ButtonLink>
               <ButtonLink href={`mailto:${shared.email}`} variant="ghost">

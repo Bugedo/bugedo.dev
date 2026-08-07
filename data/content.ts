@@ -3,7 +3,6 @@ export type Locale = 'en' | 'es';
 export const shared = {
   name: 'Nicolás Bugedo',
   tagline: 'Nicolás Bugedo',
-  cvUrl: '/Nicolas_Bugedo_CV.pdf',
   email: 'nicolas@bugedo.dev',
   github: 'https://github.com/Bugedo',
   linkedin: 'https://www.linkedin.com/in/nicobugedo/',
@@ -72,6 +71,7 @@ type LocaleCopy = {
   role: string;
   availability: string;
   stackFlexible: string;
+  cvUrl: string;
   nav: { label: string; id: string }[];
   experienceTitle: string;
   experienceSubtitle: string;
@@ -114,8 +114,10 @@ type LocaleCopy = {
 
 const en: LocaleCopy = {
   role: 'Full Stack Developer & Founder',
-  availability: 'Available for remote work',
-  stackFlexible: 'Comfortable with any modern stack. I adapt to the tools you want to use.',
+  availability: 'Open to full-time and long-term contract remote roles',
+  stackFlexible:
+    "I build production systems that real users rely on every day, from ordering platforms to booking tools. Equally comfortable owning a feature end to end or plugging into your team's existing stack, full-time or on a focused project.",
+  cvUrl: '/Nicolas_Bugedo_CV_EN.pdf',
   nav: [
     { label: 'Experience', id: 'experience' },
     { label: 'Work', id: 'work' },
@@ -223,8 +225,10 @@ const en: LocaleCopy = {
 
 const es: LocaleCopy = {
   role: 'Desarrollador Full Stack & Fundador',
-  availability: 'Disponible para trabajo remoto',
-  stackFlexible: 'Cómodo con cualquier stack moderno. Me adapto a las herramientas que quieras usar.',
+  availability: 'Disponible para posiciones remotas full-time o contrato de largo plazo',
+  stackFlexible:
+    'Construyo sistemas productivos que usuarios reales usan a diario, desde plataformas de pedidos hasta sistemas de reservas. Me adapto tanto a liderar una funcionalidad de punta a punta como a integrarme al stack de tu equipo, en un rol full-time o en un proyecto puntual.',
+  cvUrl: '/Nicolas_Bugedo_CV_ES.pdf',
   nav: [
     { label: 'Experiencia', id: 'experience' },
     { label: 'Trabajo', id: 'work' },

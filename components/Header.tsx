@@ -10,7 +10,7 @@ import { LanguageToggle } from '@/components/LanguageToggle';
 import { useLocale } from '@/hooks/useLocale';
 
 export function Header() {
-  const { t, shared } = useLocale();
+  const { t } = useLocale();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -57,14 +57,14 @@ export function Header() {
               {link.label}
             </button>
           ))}
-          <ButtonLink href={shared.cvUrl} variant="ghost" download className="!px-4 !py-2 !text-xs">
+          <ButtonLink href={t.cvUrl} variant="ghost" download className="!px-4 !py-2 !text-xs">
             CV
           </ButtonLink>
           <LanguageToggle />
         </nav>
 
         <div className="flex items-center gap-3 md:hidden">
-          <ButtonLink href={shared.cvUrl} variant="ghost" download className="!px-3 !py-2 !text-xs">
+          <ButtonLink href={t.cvUrl} variant="ghost" download className="!px-3 !py-2 !text-xs">
             CV
           </ButtonLink>
           <LanguageToggle />

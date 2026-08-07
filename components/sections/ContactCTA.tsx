@@ -44,7 +44,7 @@ export function ContactCTA() {
               >
                 <LinkedinIcon className="h-6 w-6" />
               </a>
-              <ButtonLink href={shared.cvUrl} variant="ghost" download className="!px-4 !py-2 !text-xs">
+              <ButtonLink href={t.cvUrl} variant="ghost" download className="!px-4 !py-2 !text-xs">
                 {t.downloadCv}
               </ButtonLink>
             </div>
