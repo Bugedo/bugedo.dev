@@ -113,10 +113,10 @@ type LocaleCopy = {
 };
 
 const en: LocaleCopy = {
-  role: 'Full Stack Developer & Founder',
-  availability: 'Open to full-time and long-term contract remote roles',
+  role: 'Full Stack Developer',
+  availability: 'Available to start full-time immediately. Remote only.',
   stackFlexible:
-    "I build production systems that real users rely on every day, from ordering platforms to booking tools. Equally comfortable owning a feature end to end or plugging into your team's existing stack, full-time or on a focused project.",
+    "Self-taught full-stack developer, a year and a half in. I went from electrician to shipping production systems clients rely on daily. Comfortable owning a feature end to end or plugging into your team's stack.",
   cvUrl: '/Nicolas_Bugedo_CV_EN.pdf',
   nav: [
     { label: 'Experience', id: 'experience' },
@@ -224,10 +224,10 @@ const en: LocaleCopy = {
 };
 
 const es: LocaleCopy = {
-  role: 'Desarrollador Full Stack & Fundador',
-  availability: 'Disponible para posiciones remotas full-time o contrato de largo plazo',
+  role: 'Desarrollador Full Stack',
+  availability: 'Disponible para sumarme full-time de forma inmediata. Remoto o híbrido en Córdoba.',
   stackFlexible:
-    'Construyo sistemas productivos que usuarios reales usan a diario, desde plataformas de pedidos hasta sistemas de reservas. Me adapto tanto a liderar una funcionalidad de punta a punta como a integrarme al stack de tu equipo, en un rol full-time o en un proyecto puntual.',
+    'Desarrollador full-stack autodidacta, con año y medio de experiencia. Pasé de la electricidad a construir sistemas productivos que mis clientes usan a diario. Cómodo llevando una funcionalidad de punta a punta o sumándome al stack de tu equipo.',
   cvUrl: '/Nicolas_Bugedo_CV_ES.pdf',
   nav: [
     { label: 'Experiencia', id: 'experience' },
