@@ -40,6 +40,8 @@ const projectsShared = [
     image: '/abdonur_screen.png',
     liveUrl: 'https://abdonur.com',
     repoUrl: null as string | null,
+    metricEn: 'In production · orders across multiple branches daily',
+    metricEs: 'En producción · pedidos de múltiples sucursales a diario',
   },
   {
     id: 'mundopadel' as const,
@@ -48,6 +50,8 @@ const projectsShared = [
     image: '/mundopadel.jpg',
     liveUrl: 'https://www.mundopadelclub.com/',
     repoUrl: 'https://github.com/CaimanBrujo/mundo-padel',
+    metricEn: '50+ confirmed reservations per week',
+    metricEs: '50+ reservas confirmadas por semana',
   },
   {
     id: 'wedding' as const,
@@ -56,6 +60,8 @@ const projectsShared = [
     image: '/yasymanu.jpg',
     liveUrl: 'https://yasymanu.vercel.app/',
     repoUrl: 'https://github.com/Bugedo/yasymanu',
+    metricEn: '1,500+ guests · RSVPs and payments processed',
+    metricEs: '1.500+ invitados · RSVPs y pagos procesados',
   },
   {
     id: 'devbridges' as const,
@@ -64,6 +70,8 @@ const projectsShared = [
     image: '/devbridges.jpg',
     liveUrl: 'https://developingbridges.com',
     repoUrl: 'https://github.com/CaimanBrujo/dev-bridges',
+    metricEn: null as string | null,
+    metricEs: null as string | null,
   },
 ];
 
@@ -114,9 +122,9 @@ type LocaleCopy = {
 
 const en: LocaleCopy = {
   role: 'Full Stack Developer',
-  availability: 'Available to start full-time immediately. Remote only.',
+  availability: 'Remote · GMT-3 (US-overlap friendly) · Available immediately',
   stackFlexible:
-    "Self-taught full-stack developer, a year and a half in. I went from electrician to shipping production systems clients rely on daily. Comfortable owning a feature end to end or plugging into your team's stack.",
+    "Full stack developer maintaining three production systems clients rely on daily: bookings, ordering, and payments for 1,500+ users. I own the full delivery cycle — from discovery to deployment — and I'm comfortable plugging into your team's stack from day one.",
   cvUrl: '/Nicolas_Bugedo_CV_EN.pdf',
   nav: [
     { label: 'Experience', id: 'experience' },
@@ -129,7 +137,7 @@ const en: LocaleCopy = {
   experienceSubtitle: 'Where I’ve worked. Details live in the CV.',
   experience: [
     {
-      role: 'Founder & Full Stack Developer',
+      role: 'Full Stack Developer',
       company: 'Developing Bridges',
       companyUrl: 'https://developingbridges.com',
       period: 'May 2025 to Present',
@@ -225,9 +233,9 @@ const en: LocaleCopy = {
 
 const es: LocaleCopy = {
   role: 'Desarrollador Full Stack',
-  availability: 'Disponible para sumarme full-time de forma inmediata. Remoto o híbrido en Córdoba.',
+  availability: 'Remoto · GMT-3 (compatible con horario de EE. UU.) · Disponible de inmediato',
   stackFlexible:
-    'Desarrollador full-stack autodidacta, con año y medio de experiencia. Pasé de la electricidad a construir sistemas productivos que mis clientes usan a diario. Cómodo llevando una funcionalidad de punta a punta o sumándome al stack de tu equipo.',
+    'Desarrollador full stack manteniendo tres sistemas productivos que mis clientes usan a diario: reservas, pedidos y pagos para más de 1.500 usuarios. Llevo el ciclo completo de entrega —desde el descubrimiento hasta el despliegue— y me adapto al stack de tu equipo desde el primer día.',
   cvUrl: '/Nicolas_Bugedo_CV_ES.pdf',
   nav: [
     { label: 'Experiencia', id: 'experience' },
@@ -240,7 +248,7 @@ const es: LocaleCopy = {
   experienceSubtitle: 'Dónde trabajé. El detalle está en el CV.',
   experience: [
     {
-      role: 'Fundador & Desarrollador Full Stack',
+      role: 'Desarrollador Full Stack',
       company: 'Developing Bridges',
       companyUrl: 'https://developingbridges.com',
       period: 'Mayo 2025 a Presente',
@@ -338,13 +346,14 @@ export const content = { en, es } as const;
 
 export function getProjects(locale: Locale) {
   const copy = content[locale];
-  return projectsShared.map((base) => {
+  return projectsShared.map(({ metricEn, metricEs, ...base }) => {
     const localized = copy.projects.find((p) => p.id === base.id)!;
     return {
       ...base,
       description: localized.description,
       role: localized.role,
       imageAlt: localized.imageAlt,
+      metric: locale === 'en' ? metricEn : metricEs,
     };
   });
 }

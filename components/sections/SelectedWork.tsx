@@ -49,6 +49,9 @@ export function SelectedWork() {
                     {project.role}
                   </p>
                   <h3 className="mt-1 font-display text-2xl font-bold">{project.title}</h3>
+                  {project.metric && (
+                    <p className="mt-1 text-xs text-emerald-400/90">{project.metric}</p>
+                  )}
                   <p className="mt-3 text-sm leading-relaxed text-fg/90">{project.description}</p>
                   <div className="mt-4 flex flex-wrap gap-2">
                     {project.stack.map((tag) => (

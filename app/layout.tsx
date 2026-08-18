@@ -19,7 +19,7 @@ const body = Inter({
 export const metadata = {
   title: 'Nicolás Bugedo',
   description:
-    'Full Stack Developer available for remote work. Production web apps, end to end delivery. Comfortable with any modern stack.',
+    'Full Stack Developer (React, Next.js, Node, TypeScript). Three production systems live. Remote, GMT-3, available immediately.',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
