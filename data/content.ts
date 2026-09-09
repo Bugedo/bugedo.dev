@@ -54,22 +54,12 @@ const projectsShared = [
     metricEs: '50+ reservas confirmadas por semana',
   },
   {
-    id: 'wedding' as const,
-    title: 'Wedding Invitation',
-    stack: ['Next.js', 'Google Sheets API'],
-    image: '/yasymanu.jpg',
-    liveUrl: 'https://yasymanu.vercel.app/',
-    repoUrl: 'https://github.com/Bugedo/yasymanu',
-    metricEn: '1,500+ guests · RSVPs and payments processed',
-    metricEs: '1.500+ invitados · RSVPs y pagos procesados',
-  },
-  {
-    id: 'devbridges' as const,
-    title: 'Developing Bridges',
-    stack: ['Next.js', 'Tailwind', 'Framer Motion'],
-    image: '/devbridges.jpg',
-    liveUrl: 'https://developingbridges.com',
-    repoUrl: 'https://github.com/Bugedo/dev-bridges',
+    id: 'prepaga' as const,
+    title: 'Prepaga Argentina',
+    stack: ['Next.js', 'Supabase', 'PostgreSQL'],
+    image: '/prepagaargentina.jpg',
+    liveUrl: 'https://www.prepagaargentina.com/',
+    repoUrl: 'https://github.com/Bugedo/medweb',
     metricEn: null as string | null,
     metricEs: null as string | null,
   },
@@ -89,7 +79,8 @@ type LocaleCopy = {
     companyUrl: string | null;
     period: string;
     location: string;
-    summary: string;
+    summary?: string;
+    bullets?: string[];
   }[];
   workTitle: string;
   workSubtitle: string;
@@ -142,26 +133,48 @@ const en: LocaleCopy = {
       companyUrl: 'https://developingbridges.com',
       period: 'May 2025 to Present',
       location: 'Remote',
-      summary:
-        'Building and shipping production web products end to end: ordering, booking, and client platforms.',
+      bullets: [
+        'Abdonur (abdonur.com): online ordering for a Middle Eastern food brand with several branches. Dynamic catalog, orders routed to the right branch, checkout over WhatsApp. In production.',
+        'Mundo Padel Club (mundopadelclub.com): online booking for 3 courts. Customers pick a slot without creating an account, confirm, and pay over WhatsApp; the booking stays pending until paid. The club manages the schedule from its own panel. 50+ confirmed reservations a week.',
+      ],
+    },
+    {
+      role: 'Lead Sound Engineer',
+      company: "Layer 8, It's Me Games",
+      companyUrl: null,
+      period: '2026 to Present',
+      location: 'Remote, part-time',
+      bullets: [
+        "Creating the game's entire sound library from scratch, composing the original soundtrack, and integrating every sound into Unity.",
+        "Unity is new to me on this project; the sound design isn't.",
+      ],
     },
     {
       role: 'Full Stack Engineer (Contract)',
       company: 'Ewents',
       companyUrl: 'https://ewents.io',
-      period: 'Aug 2025 to Mar 2026',
-      location: 'USA · Remote',
-      summary:
-        'Greenfield internal CRM and edge APIs with automated invoicing, commissions, and timesheets that cut about 80% of manual spreadsheet work.',
+      period: 'Aug 2025 to Jan 2026',
+      location: 'US company, remote',
+      bullets: [
+        "Built the company's internal CRM together with its tech lead (Angular 18, Hono on Cloudflare Workers, Supabase/PostgreSQL): invoicing, commission calculation, timesheet approval.",
+        "Angular and Cloudflare Workers were new to me; first project inside another team's codebase and deployment process.",
+      ],
     },
     {
-      role: 'Electrician & Solar Energy Technician',
+      role: 'Operations Coordinator',
+      company: 'Cervinia Cleaning',
+      companyUrl: null,
+      period: 'Nov 2025 to May 2026',
+      location: 'Breuil-Cervinia, Italy',
+      summary: 'Winter season · in charge of a team of 10 · direct client contact, in English and Italian',
+    },
+    {
+      role: 'Electrician & Solar Technician',
       company: 'Self-employed',
       companyUrl: null,
       period: '2017 to 2024',
-      location: 'Argentina',
-      summary:
-        'Electrical and solar installations with hands-on troubleshooting under time and safety pressure.',
+      location: 'Córdoba, Argentina',
+      bullets: ['Own electrical and solar installation business.'],
     },
   ],
   workTitle: '# Work.',
@@ -182,18 +195,11 @@ const en: LocaleCopy = {
       imageAlt: 'Mundo Padel Club',
     },
     {
-      id: 'wedding',
+      id: 'prepaga',
       description:
-        'Guest portal for 1,500+ attendees with confirmations, payments, and live pricing from Google Sheets.',
+        'Lead capture platform for a health insurance broker: online enrollment form wired to a database, file uploads to storage, and an admin panel for staff to manage submissions.',
       role: 'Full stack builder',
-      imageAlt: 'Wedding invitation platform',
-    },
-    {
-      id: 'devbridges',
-      description:
-        'Studio site for the consultancy behind these builds: services, case studies, and client intake.',
-      role: 'Design & development',
-      imageAlt: 'Developing Bridges',
+      imageAlt: 'Prepaga Argentina enrollment platform',
     },
   ],
   skillsTitle: '# Skills.',
@@ -251,28 +257,50 @@ const es: LocaleCopy = {
       role: 'Desarrollador Full Stack',
       company: 'Developing Bridges',
       companyUrl: 'https://developingbridges.com',
-      period: 'Mayo 2025 a Presente',
+      period: 'Mayo 2025 a Actualidad',
       location: 'Remoto',
-      summary:
-        'Diseño y entrega de productos web en producción de punta a punta: pedidos, reservas y plataformas para clientes.',
+      bullets: [
+        'Abdonur (abdonur.com): pedidos online para una marca de comida árabe con varias sucursales. Catálogo dinámico, pedidos ruteados a la sucursal correcta, checkout por WhatsApp. En producción.',
+        'Mundo Padel Club (mundopadelclub.com): reservas online para 3 canchas. El cliente elige el turno sin registrarse, confirma y paga por WhatsApp; la reserva queda pendiente hasta el pago. El club administra el turnero desde su propio panel. Más de 50 reservas confirmadas por semana.',
+      ],
+    },
+    {
+      role: 'Lead Sound Engineer',
+      company: "Layer 8, It's Me Games",
+      companyUrl: null,
+      period: '2026 a Actualidad',
+      location: 'Remoto, part-time',
+      bullets: [
+        'Creación de la librería de sonido completa del juego desde cero, composición de la banda sonora original e integración de cada sonido en Unity.',
+        'Unity es nuevo para mí en este proyecto; el diseño de sonido, no.',
+      ],
     },
     {
       role: 'Ingeniero Full Stack (Contrato)',
       company: 'Ewents',
       companyUrl: 'https://ewents.io',
-      period: 'Ago 2025 a Mar 2026',
-      location: 'USA · Remoto',
-      summary:
-        'CRM interno desde cero y APIs en el edge, con facturación, comisiones y hojas de horas que eliminaron cerca del 80% del trabajo manual en planillas.',
+      period: 'Ago 2025 a Ene 2026',
+      location: 'Empresa de EE.UU., remoto',
+      bullets: [
+        'Construí el CRM interno de la empresa junto a su tech lead (Angular 18, Hono sobre Cloudflare Workers, Supabase/PostgreSQL): facturación, cálculo de comisiones, aprobación de timesheets.',
+        'Angular y Cloudflare Workers eran nuevos para mí; primer proyecto dentro de la base de código y el proceso de deploy de otro equipo.',
+      ],
     },
     {
-      role: 'Electricista & Técnico en Energía Solar',
-      company: 'Cuenta propia',
+      role: 'Coordinador de Operaciones',
+      company: 'Cervinia Cleaning',
+      companyUrl: null,
+      period: 'Nov 2025 a May 2026',
+      location: 'Breuil-Cervinia, Italia',
+      summary: 'Temporada de invierno · a cargo de un equipo de 10 personas · contacto directo con el cliente, en inglés e italiano',
+    },
+    {
+      role: 'Electricista y Técnico Solar',
+      company: 'Independiente',
       companyUrl: null,
       period: '2017 a 2024',
-      location: 'Argentina',
-      summary:
-        'Instalaciones eléctricas y solares, con resolución de problemas bajo presión de tiempo y seguridad.',
+      location: 'Córdoba, Argentina',
+      bullets: ['Negocio propio de instalaciones eléctricas y solares.'],
     },
   ],
   workTitle: '# Trabajo.',
@@ -293,18 +321,11 @@ const es: LocaleCopy = {
       imageAlt: 'Mundo Padel Club',
     },
     {
-      id: 'wedding',
+      id: 'prepaga',
       description:
-        'Portal de invitados para más de 1.500 personas, con confirmaciones, pagos y precios en vivo desde Google Sheets.',
+        'Plataforma de captación de datos para un bróker de seguros de salud: formulario de alta online conectado a una base de datos, carga de archivos a un bucket y panel de administración para que el equipo gestione las solicitudes.',
       role: 'Full stack',
-      imageAlt: 'Invitación de casamiento',
-    },
-    {
-      id: 'devbridges',
-      description:
-        'Sitio del estudio detrás de estos proyectos: servicios, casos y contacto con clientes.',
-      role: 'Diseño y desarrollo',
-      imageAlt: 'Developing Bridges',
+      imageAlt: 'Plataforma de Prepaga Argentina',
     },
   ],
   skillsTitle: '# Skills.',

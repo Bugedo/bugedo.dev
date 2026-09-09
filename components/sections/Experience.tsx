@@ -46,7 +46,15 @@ export function Experience() {
                       job.company
                     )}
                   </h3>
-                  <p className="mt-3 max-w-2xl text-base leading-relaxed text-fg/90">{job.summary}</p>
+                  {job.bullets ? (
+                    <ul className="mt-3 max-w-2xl list-disc space-y-1 pl-5 text-base leading-relaxed text-fg/90">
+                      {job.bullets.map((bullet) => (
+                        <li key={bullet}>{bullet}</li>
+                      ))}
+                    </ul>
+                  ) : job.summary ? (
+                    <p className="mt-3 max-w-2xl text-base leading-relaxed text-fg/90">{job.summary}</p>
+                  ) : null}
                 </div>
                 <div className="shrink-0 text-left sm:text-right">
                   <p className="font-display text-sm font-semibold text-fg">{job.period}</p>
