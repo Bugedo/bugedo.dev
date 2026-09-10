@@ -115,7 +115,7 @@ const en: LocaleCopy = {
   role: 'Full Stack Developer',
   availability: 'Remote · GMT-3 (US-overlap friendly) · Available immediately',
   stackFlexible:
-    "Full stack developer maintaining three production systems clients rely on daily: bookings, ordering, and payments for 1,500+ users. I own the full delivery cycle — from discovery to deployment — and I'm comfortable plugging into your team's stack from day one.",
+    "Full stack developer (React, Next.js, TypeScript, Node.js, PostgreSQL/Supabase). Two clients in production — court bookings and online ordering — and six months building a US company's internal CRM alongside its tech lead. Currently also Lead Sound Engineer on an indie game: full sound library, original soundtrack and Unity integration. Day to day I work with Claude Code and Codex; what they generate goes through review and tests before deployment.",
   cvUrl: '/Nicolas_Bugedo_CV_EN.pdf',
   nav: [
     { label: 'Experience', id: 'experience' },
@@ -241,7 +241,7 @@ const es: LocaleCopy = {
   role: 'Desarrollador Full Stack',
   availability: 'Remoto · GMT-3 (compatible con horario de EE. UU.) · Disponible de inmediato',
   stackFlexible:
-    'Desarrollador full stack manteniendo tres sistemas productivos que mis clientes usan a diario: reservas, pedidos y pagos para más de 1.500 usuarios. Llevo el ciclo completo de entrega —desde el descubrimiento hasta el despliegue— y me adapto al stack de tu equipo desde el primer día.',
+    'Desarrollador full stack (React, Next.js, TypeScript, Node.js, PostgreSQL/Supabase). Dos clientes en producción — reservas de canchas y pedidos online — y seis meses construyendo el CRM interno de una empresa de EE.UU. junto a su tech lead. Actualmente también Lead Sound Engineer en un juego indie: librería de sonido completa, banda sonora original e integración en Unity. En el día a día trabajo con Claude Code y Codex; lo que generan pasa por revisión y tests antes del deploy.',
   cvUrl: '/Nicolas_Bugedo_CV_ES.pdf',
   nav: [
     { label: 'Experiencia', id: 'experience' },
